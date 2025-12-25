@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Masuk | Belajar Digital Marketing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Masuk atau daftar untuk mulai belajar digital marketing dari nol dengan cara yang tenang dan terarah.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+  <main class="auth-container">
+
+    <!-- BRAND / PESAN AMAN -->
+    <section class="auth-intro">
+      <h1>Selamat Datang</h1>
+      <p>
+        Ini bukan tempat orang pintar pamer istilah.<br>
+        Ini tempat pemula belajar pelan-pelan dan praktek dengan aman.
+      </p>
+    </section>
+
+    <!-- FORM AUTH -->
+    <section class="auth-box">
+
+      <h2>Masuk atau Daftar</h2>
+      <p class="auth-note">
+        Gunakan email aktif. Tidak ada spam. Tidak ada janji palsu.
+      </p>
+
+      <form id="authForm" autocomplete="off">
+
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="contoh@email.com" 
+          required
+        >
+
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          placeholder="Minimal 6 karakter" 
+          required
+        >
+
+        <div class="auth-actions">
+          <button type="button" id="btnLogin" class="btn primary">
+            Login
+          </button>
+
+          <button type="button" id="btnRegister" class="btn secondary">
+            Daftar & Mulai Belajar
+          </button>
+        </div>
+
+        <p id="authMessage" class="auth-message"></p>
+
+      </form>
+
+    </section>
+
+    <!-- TRUST MESSAGE -->
+    <section class="auth-trust">
+      <p>
+        🔒 Data kamu aman.<br>
+        Kamu bisa berhenti kapan saja.
+      </p>
+      <a href="index.html" class="back-link">← Kembali ke halaman utama</a>
+    </section>
+
+  </main>
+
+  <!-- AUTH LOGIC -->
+  <script type="module" src="auth.js"></script>
+
+</body>
+</html>
